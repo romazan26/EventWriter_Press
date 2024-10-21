@@ -11,7 +11,7 @@ import SwiftUI
 struct EventWriter_PressApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoadingView()
         }
     }
 }
