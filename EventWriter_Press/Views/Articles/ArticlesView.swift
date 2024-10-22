@@ -19,14 +19,14 @@ struct ArticlesView: View {
                 //MARK: - Add Article button
                 HStack{
                     Spacer()
-                    Button {
-                        ///Plus action
+                    NavigationLink {
+                        AddArticleView(vm: vm)
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .resizable()
                             .frame(width: 22, height: 22)
                     }
-
+                    
                 }
                 
                 //MARK: - Title view
@@ -39,8 +39,18 @@ struct ArticlesView: View {
                 }
                 
                 //MARK: - List Articles
+                if vm.articles.isEmpty {
+                    Spacer()
+                    Text("No articles added")
+                        .font(.title2)
+                        .foregroundStyle(.white)
+                    Text("Add an article with the plus icon above")
+                        .foregroundStyle(.gray)
+                }
                 ScrollView {
-                    Text("Articles")
+                    ForEach(vm.articles) { article in
+                        
+                    }
                 }
                 Spacer()
             }.padding()
