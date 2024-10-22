@@ -16,9 +16,10 @@ struct CustomProgressView: View {
                 .foregroundStyle(.gray)
                 .frame(width: 190, height: 6)
             RoundedRectangle(cornerRadius: 10)
-                .foregroundStyle(.orange)
+                .foregroundStyle(.orangeApp)
                 .frame(width: 1.9 * CGFloat(progress), height: 6)
-        }.padding()
+        }
+        .padding()
     }
 }
 

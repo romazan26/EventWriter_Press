@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct LoadingView: View {
+    
     @State private var percents: Int = 0
+    @AppStorage("isFirstLaunch") private var isFirstLaunch: Bool?
+    @State private var isLoading: Bool = false
+    
     var progress: Progress {
         Progress(totalUnitCount: 100)
     }
@@ -27,11 +31,22 @@ struct LoadingView: View {
                     
             
         }
+        .fullScreenCover(isPresented: $isLoading, content: {
+            if isFirstLaunch ?? true {
+                IntroView()
+            }else{
+                HomeView()
+            }
+            
+         })
         .onAppear(perform: {
             Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { timer in
                 if percents < 100{
                     percents += 1
-                }else {timer.invalidate()}
+                }else {
+                    timer.invalidate()
+                    isLoading = true
+                }
             }
         })
     }
