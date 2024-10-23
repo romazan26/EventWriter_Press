@@ -52,6 +52,7 @@ struct AddArticleView: View {
                     }
                 }
                 
+                
                 //MARK: - Publisher
                 TextField("Publisher", text: $vm.simplePublisher)
                     .frame(height: 62)
@@ -59,7 +60,7 @@ struct AddArticleView: View {
                     .padding(8)
                     .overlay {
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(vm.simpleTitle.isEmpty ? .gray : .orangeApp, lineWidth: 2.0)
+                            .stroke(vm.simplePublisher.isEmpty ? .gray : .orangeApp, lineWidth: 2.0)
                     }
                 
                 //MARK: - text
@@ -69,7 +70,17 @@ struct AddArticleView: View {
                     .padding(8)
                     .overlay {
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(vm.simpleTitle.isEmpty ? .gray : .orangeApp, lineWidth: 2.0)
+                            .stroke(vm.simpleText.isEmpty ? .gray : .orangeApp, lineWidth: 2.0)
+                    }
+                
+                //MARK: Status
+                PickerStatusView(hint: "Status", maxWidth: .infinity, selection: $vm.simpleStatus)
+                    .frame(height: 62)
+                    
+                    .padding(8)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(vm.simpleStatus.isEmpty ? .gray : .orangeApp, lineWidth: 2.0)
                     }
                 Spacer()
                 

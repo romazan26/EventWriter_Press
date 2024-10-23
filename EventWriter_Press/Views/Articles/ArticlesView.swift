@@ -49,7 +49,11 @@ struct ArticlesView: View {
                 }
                 ScrollView {
                     ForEach(vm.articles) { article in
-                        
+                        NavigationLink {
+                            ArticleView(vm: vm, article: article)
+                        } label: {
+                            ArticleCellView(article: article)
+                        }   
                     }
                 }
                 Spacer()
