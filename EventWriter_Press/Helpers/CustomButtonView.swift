@@ -9,9 +9,11 @@ import SwiftUI
 
 struct CustomButtonView: View {
     var text: String
+    var color: ColorResource = .orangeApp
     var body: some View {
         ZStack {
-            Color.orangeApp.cornerRadius(20)
+            Color(color)
+                .cornerRadius(20)
             Text(text)
                 .foregroundStyle(.black)
                 .font(.title2)

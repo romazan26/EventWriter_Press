@@ -21,7 +21,7 @@ struct HomeView: View {
                         .tabItem { TabItemView(imageName: "doc.plaintext.fill", text: "Article")}
                     EventsView()
                         .tabItem {TabItemView(imageName: "calendar.badge.clock", text: "Events")}
-                    Text("Tab Content ")
+                    BudgetView()
                         .tabItem { TabItemView(imageName: "dollarsign.circle.fill", text: "Budget")}
                     Text("Tab Content 2").tabItem {TabItemView(imageName: "richtext.page.fill", text: "Post")}
                     Text("Tab Content 2").tabItem {TabItemView(imageName: "ellipsis.circle.fill", text: "More")}
