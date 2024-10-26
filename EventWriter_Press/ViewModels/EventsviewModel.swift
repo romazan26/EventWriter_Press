@@ -25,6 +25,13 @@ final class EventsViewModel: ObservableObject {
         fetchEvents()
     }
     
+    func resetData() {
+        for event in events {
+            manager.context.delete(event)
+        }
+        saveEvent()
+    }
+    
     //MARK: - Delete data
     func deleteEvent(event: Event) {
         manager.context.delete(event)

@@ -1,25 +1,24 @@
 //
-//  EventsView.swift
+//  PostsView.swift
 //  EventWriter_Press
 //
-//  Created by Роман on 25.10.2024.
+//  Created by Роман on 26.10.2024.
 //
 
 import SwiftUI
 
-struct EventsView: View {
-    @StateObject var vm: EventsViewModel
+struct PostsView: View {
+    @StateObject var vm: PostViewModel
         
         var body: some View {
             ZStack {
                 Color.main.ignoresSafeArea()
-                VStack {
-                    
-                    //MARK: - Add Article button
+                VStack {  
+                    //MARK: - Add Post button
                     HStack{
                         Spacer()
                         NavigationLink {
-                            AddEventView(vm: vm)
+                            AddPostView(vm: vm)
                         } label: {
                             Image(systemName: "plus.circle.fill")
                                 .resizable()
@@ -30,28 +29,28 @@ struct EventsView: View {
                     
                     //MARK: - Title view
                     HStack{
-                        Text("Events")
+                        Text("Posts")
                             .foregroundStyle(.white)
                             .font(.system(size: 34, weight: .heavy))
                             
                         Spacer()
                     }
                     
-                    //MARK: - List Articles
-                    if vm.events.isEmpty {
+                    //MARK: - List Posts
+                    if vm.posts.isEmpty {
                         Spacer()
-                        Text("No events added")
+                        Text("No posts added")
                             .font(.title2)
                             .foregroundStyle(.white)
-                        Text("Add an events with the plus icon above")
+                        Text("Add an posts with the plus icon above")
                             .foregroundStyle(.gray)
                     }
                     ScrollView {
-                        ForEach(vm.events) { event in
+                        ForEach(vm.posts) { post in
                             NavigationLink {
-                                EventView(vm: vm, event: event)
+                                PostView(post: post)
                             } label: {
-                                EventCellView(event: event)
+                                PostCellView(vm: vm, post: post)
                             }
                         }
                     }
@@ -59,9 +58,8 @@ struct EventsView: View {
                 }.padding()
             }
         }
-    
 }
 
 #Preview {
-    EventsView(vm: EventsViewModel())
+    PostsView(vm: PostViewModel())
 }

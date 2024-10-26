@@ -14,7 +14,7 @@ final class BudgetViewModel: ObservableObject {
     
     let manager = CoreDataManager.instance
     
-    @Published var switchBudget: Bool = false
+    @Published var switchBudget: Bool = true
     
     @Published var simpleIncomeTitle: String = ""
     @Published var simpleExpensesTitle: String = ""
@@ -26,6 +26,17 @@ final class BudgetViewModel: ObservableObject {
     init() {
         fetchExpenses()
         fetchIncome()
+    }
+    
+    func resetData() {
+
+        for income in incomes {
+            manager.context.delete(income)
+        }
+        for exercises in expenses {
+            manager.context.delete(exercises)
+        }
+        saveBudget()
     }
     
     //MARK: - Delete data

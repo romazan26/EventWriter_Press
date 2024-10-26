@@ -22,6 +22,14 @@ final class ArticlesViewModel: ObservableObject {
         fetchArticles()
     }
     
+    func resetData() {
+        for article in articles {
+            manager.context.delete(article)
+        }
+        saveArticle()
+    }
+    
+    
     //MARK: - Delete data
     func deleteArticle(article: Article) {
         manager.context.delete(article)

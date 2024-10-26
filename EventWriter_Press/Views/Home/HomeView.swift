@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var vmBudg = BudgetViewModel()
+    @StateObject var vmArt = ArticlesViewModel()
+    @StateObject var vmEvent = EventsViewModel()
+    @StateObject var vmPost = PostViewModel()
+    
     init() {
         UITabBar.appearance().backgroundColor = .main
         UITabBar.appearance().unselectedItemTintColor = .gray
@@ -17,14 +23,20 @@ struct HomeView: View {
             ZStack {
                 Color.main.ignoresSafeArea()
                 TabView() {
-                    ArticlesView()
+                    ArticlesView(vm: vmArt)
                         .tabItem { TabItemView(imageName: "doc.plaintext.fill", text: "Article")}
-                    EventsView()
+                        
+                    EventsView(vm: vmEvent)
                         .tabItem {TabItemView(imageName: "calendar.badge.clock", text: "Events")}
-                    BudgetView()
+                    
+                    BudgetView(vm: vmBudg)
                         .tabItem { TabItemView(imageName: "dollarsign.circle.fill", text: "Budget")}
-                    Text("Tab Content 2").tabItem {TabItemView(imageName: "richtext.page.fill", text: "Post")}
-                    Text("Tab Content 2").tabItem {TabItemView(imageName: "ellipsis.circle.fill", text: "More")}
+                    
+                    PostsView(vm: vmPost)
+                        .tabItem {TabItemView(imageName: "pencil.slash", text: "Posts")}
+                    
+                    SettingsView(vmBudg: vmBudg, vmArt: vmArt, vmEvent: vmEvent, vmPost: vmPost)
+                        .tabItem {TabItemView(imageName: "ellipsis.circle.fill", text: "More")}
                     
                 }
             }

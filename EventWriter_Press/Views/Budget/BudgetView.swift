@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BudgetView: View {
-    @StateObject var vm = BudgetViewModel()
+    @StateObject var vm: BudgetViewModel
         
         var body: some View {
             ZStack {
@@ -94,5 +94,5 @@ struct BudgetView: View {
 }
 
 #Preview {
-    BudgetView()
+    BudgetView(vm: BudgetViewModel())
 }

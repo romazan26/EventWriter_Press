@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ArticlesView: View {
     
-    @StateObject var vm = ArticlesViewModel()
+    @StateObject var vm: ArticlesViewModel
     
     var body: some View {
         ZStack {
@@ -63,5 +63,5 @@ struct ArticlesView: View {
 }
 
 #Preview {
-    ArticlesView()
+    ArticlesView(vm: ArticlesViewModel())
 }

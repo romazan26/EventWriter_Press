@@ -26,4 +26,9 @@
         <attribute name="sum" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="namePost" optional="YES" attributeType="String"/>
+        <attribute name="textPost" optional="YES" attributeType="String"/>
+    </entity>
 </model>
