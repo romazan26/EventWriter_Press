@@ -12,6 +12,7 @@ struct LoadingView: View {
     @State private var percents: Int = 0
     @AppStorage("isFirstLaunch") private var isFirstLaunch: Bool?
     @State private var isLoading: Bool = false
+    @StateObject var vm = LoadingViewModel()
     
     var progress: Progress {
         Progress(totalUnitCount: 100)
@@ -32,6 +33,9 @@ struct LoadingView: View {
             
         }
         .fullScreenCover(isPresented: $isLoading, content: {
+                if vm.isConnected {
+                    WebViewPage(urlString: (URL(string: vm.urlString)!))
+                }else
             if isFirstLaunch ?? true {
                 IntroView()
             }else{

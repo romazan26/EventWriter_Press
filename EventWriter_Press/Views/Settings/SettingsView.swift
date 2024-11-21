@@ -13,7 +13,7 @@ struct SettingsView: View {
     @State private var isPresentShare = false
     @State private var isPresentPolicy = false
     @State var urlShare = "https://www.apple.com/app-store/"
-    @State var urlPrivacy = "https://google.com"
+    @State var urlPrivacy = "https://www.termsfeed.com/live/92022fc3-bc45-4171-adbe-f2c246a27ce2"
     @State var alert = false
 
     @StateObject var vmBudg: BudgetViewModel

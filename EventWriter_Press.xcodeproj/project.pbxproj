@@ -3,20 +3,103 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		306143D62CD25D2700095A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306143AC2CD25D2700095A88 /* Preview Assets.xcassets */; };
+		306143D72CD25D2700095A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306143D22CD25D2700095A88 /* Assets.xcassets */; };
+		306143D82CD25D2700095A88 /* ArticleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143982CD25D2700095A88 /* ArticleCellView.swift */; };
+		306143D92CD25D2700095A88 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143992CD25D2700095A88 /* EventCellView.swift */; };
+		306143DA2CD25D2700095A88 /* ExpensesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061439A2CD25D2700095A88 /* ExpensesCellView.swift */; };
+		306143DB2CD25D2700095A88 /* IncomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061439B2CD25D2700095A88 /* IncomeCellView.swift */; };
+		306143DC2CD25D2700095A88 /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061439C2CD25D2700095A88 /* PostCellView.swift */; };
+		306143DD2CD25D2700095A88 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061439D2CD25D2700095A88 /* TabItemView.swift */; };
+		306143DE2CD25D2700095A88 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061439F2CD25D2700095A88 /* CoreDataManager.swift */; };
+		306143DF2CD25D2700095A88 /* EventsWR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306143A02CD25D2700095A88 /* EventsWR.xcdatamodeld */; };
+		306143E02CD25D2700095A88 /* GenreEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A22CD25D2700095A88 /* GenreEnum.swift */; };
+		306143E12CD25D2700095A88 /* StatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A32CD25D2700095A88 /* StatusEnum.swift */; };
+		306143E22CD25D2700095A88 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A52CD25D2700095A88 /* CustomButtonView.swift */; };
+		306143E32CD25D2700095A88 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A62CD25D2700095A88 /* CustomProgressView.swift */; };
+		306143E42CD25D2700095A88 /* MultiLineTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A72CD25D2700095A88 /* MultiLineTF.swift */; };
+		306143E52CD25D2700095A88 /* PickerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A82CD25D2700095A88 /* PickerStatusView.swift */; };
+		306143E62CD25D2700095A88 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143A92CD25D2700095A88 /* ScoreView.swift */; };
+		306143E72CD25D2700095A88 /* SettingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143AA2CD25D2700095A88 /* SettingButtonView.swift */; };
+		306143E82CD25D2700095A88 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143AE2CD25D2700095A88 /* ArticlesViewModel.swift */; };
+		306143E92CD25D2700095A88 /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143AF2CD25D2700095A88 /* BudgetViewModel.swift */; };
+		306143EA2CD25D2700095A88 /* EventsviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B02CD25D2700095A88 /* EventsviewModel.swift */; };
+		306143EB2CD25D2700095A88 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B12CD25D2700095A88 /* LoadingViewModel.swift */; };
+		306143EC2CD25D2700095A88 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B22CD25D2700095A88 /* PostViewModel.swift */; };
+		306143ED2CD25D2700095A88 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B42CD25D2700095A88 /* AddArticleView.swift */; };
+		306143EE2CD25D2700095A88 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B52CD25D2700095A88 /* ArticlesView.swift */; };
+		306143EF2CD25D2700095A88 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B62CD25D2700095A88 /* ArticleView.swift */; };
+		306143F02CD25D2700095A88 /* AddExpensesview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B82CD25D2700095A88 /* AddExpensesview.swift */; };
+		306143F12CD25D2700095A88 /* AddIncomeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143B92CD25D2700095A88 /* AddIncomeview.swift */; };
+		306143F22CD25D2700095A88 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143BA2CD25D2700095A88 /* BudgetView.swift */; };
+		306143F32CD25D2700095A88 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143BC2CD25D2700095A88 /* AddEventView.swift */; };
+		306143F42CD25D2700095A88 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143BD2CD25D2700095A88 /* EventsView.swift */; };
+		306143F52CD25D2700095A88 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143BE2CD25D2700095A88 /* EventView.swift */; };
+		306143F62CD25D2700095A88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C02CD25D2700095A88 /* HomeView.swift */; };
+		306143F72CD25D2700095A88 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C22CD25D2700095A88 /* LoadingView.swift */; };
+		306143F82CD25D2700095A88 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C42CD25D2700095A88 /* IntroView.swift */; };
+		306143F92CD25D2700095A88 /* PageIntroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C52CD25D2700095A88 /* PageIntroModel.swift */; };
+		306143FA2CD25D2700095A88 /* PageIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C62CD25D2700095A88 /* PageIntroView.swift */; };
+		306143FB2CD25D2700095A88 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C82CD25D2700095A88 /* AddPostView.swift */; };
+		306143FC2CD25D2700095A88 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143C92CD25D2700095A88 /* PostsView.swift */; };
+		306143FD2CD25D2700095A88 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143CA2CD25D2700095A88 /* PostView.swift */; };
+		306143FE2CD25D2700095A88 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143CC2CD25D2700095A88 /* SettingsView.swift */; };
+		306143FF2CD25D2700095A88 /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143CF2CD25D2700095A88 /* webView.swift */; };
+		306144002CD25D2700095A88 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143D02CD25D2700095A88 /* WebViewPage.swift */; };
+		306144012CD25D2700095A88 /* EventWriter_PressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306143D32CD25D2700095A88 /* EventWriter_PressApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		306143982CD25D2700095A88 /* ArticleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCellView.swift; sourceTree = "<group>"; };
+		306143992CD25D2700095A88 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
+		3061439A2CD25D2700095A88 /* ExpensesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesCellView.swift; sourceTree = "<group>"; };
+		3061439B2CD25D2700095A88 /* IncomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCellView.swift; sourceTree = "<group>"; };
+		3061439C2CD25D2700095A88 /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
+		3061439D2CD25D2700095A88 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		3061439F2CD25D2700095A88 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		306143A22CD25D2700095A88 /* GenreEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreEnum.swift; sourceTree = "<group>"; };
+		306143A32CD25D2700095A88 /* StatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEnum.swift; sourceTree = "<group>"; };
+		306143A52CD25D2700095A88 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		306143A62CD25D2700095A88 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		306143A72CD25D2700095A88 /* MultiLineTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineTF.swift; sourceTree = "<group>"; };
+		306143A82CD25D2700095A88 /* PickerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerStatusView.swift; sourceTree = "<group>"; };
+		306143A92CD25D2700095A88 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		306143AA2CD25D2700095A88 /* SettingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonView.swift; sourceTree = "<group>"; };
+		306143AC2CD25D2700095A88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		306143AE2CD25D2700095A88 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		306143AF2CD25D2700095A88 /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		306143B02CD25D2700095A88 /* EventsviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsviewModel.swift; sourceTree = "<group>"; };
+		306143B12CD25D2700095A88 /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
+		306143B22CD25D2700095A88 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		306143B42CD25D2700095A88 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
+		306143B52CD25D2700095A88 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		306143B62CD25D2700095A88 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		306143B82CD25D2700095A88 /* AddExpensesview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpensesview.swift; sourceTree = "<group>"; };
+		306143B92CD25D2700095A88 /* AddIncomeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeview.swift; sourceTree = "<group>"; };
+		306143BA2CD25D2700095A88 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		306143BC2CD25D2700095A88 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		306143BD2CD25D2700095A88 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		306143BE2CD25D2700095A88 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		306143C02CD25D2700095A88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		306143C22CD25D2700095A88 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		306143C42CD25D2700095A88 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		306143C52CD25D2700095A88 /* PageIntroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntroModel.swift; sourceTree = "<group>"; };
+		306143C62CD25D2700095A88 /* PageIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntroView.swift; sourceTree = "<group>"; };
+		306143C82CD25D2700095A88 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		306143C92CD25D2700095A88 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		306143CA2CD25D2700095A88 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		306143CC2CD25D2700095A88 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		306143CF2CD25D2700095A88 /* webView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
+		306143D02CD25D2700095A88 /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
+		306143D22CD25D2700095A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		306143D32CD25D2700095A88 /* EventWriter_PressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWriter_PressApp.swift; sourceTree = "<group>"; };
+		306143D52CD25D2700095A88 /* EventsWR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventsWR.xcdatamodel; sourceTree = "<group>"; };
 		30E78AE22CC6DE3400FE93DB /* EventWriter_Press.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventWriter_Press.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		30E78AE42CC6DE3400FE93DB /* EventWriter_Press */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EventWriter_Press;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30E78ADF2CC6DE3400FE93DB /* Frameworks */ = {
@@ -29,10 +112,189 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3061439E2CD25D2700095A88 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				306143982CD25D2700095A88 /* ArticleCellView.swift */,
+				306143992CD25D2700095A88 /* EventCellView.swift */,
+				3061439A2CD25D2700095A88 /* ExpensesCellView.swift */,
+				3061439B2CD25D2700095A88 /* IncomeCellView.swift */,
+				3061439C2CD25D2700095A88 /* PostCellView.swift */,
+				3061439D2CD25D2700095A88 /* TabItemView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		306143A12CD25D2700095A88 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3061439F2CD25D2700095A88 /* CoreDataManager.swift */,
+				306143A02CD25D2700095A88 /* EventsWR.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		306143A42CD25D2700095A88 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				306143A22CD25D2700095A88 /* GenreEnum.swift */,
+				306143A32CD25D2700095A88 /* StatusEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		306143AB2CD25D2700095A88 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				306143A52CD25D2700095A88 /* CustomButtonView.swift */,
+				306143A62CD25D2700095A88 /* CustomProgressView.swift */,
+				306143A72CD25D2700095A88 /* MultiLineTF.swift */,
+				306143A82CD25D2700095A88 /* PickerStatusView.swift */,
+				306143A92CD25D2700095A88 /* ScoreView.swift */,
+				306143AA2CD25D2700095A88 /* SettingButtonView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		306143AD2CD25D2700095A88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				306143AC2CD25D2700095A88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		306143B32CD25D2700095A88 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				306143AE2CD25D2700095A88 /* ArticlesViewModel.swift */,
+				306143AF2CD25D2700095A88 /* BudgetViewModel.swift */,
+				306143B02CD25D2700095A88 /* EventsviewModel.swift */,
+				306143B12CD25D2700095A88 /* LoadingViewModel.swift */,
+				306143B22CD25D2700095A88 /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		306143B72CD25D2700095A88 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				306143B42CD25D2700095A88 /* AddArticleView.swift */,
+				306143B52CD25D2700095A88 /* ArticlesView.swift */,
+				306143B62CD25D2700095A88 /* ArticleView.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		306143BB2CD25D2700095A88 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				306143B82CD25D2700095A88 /* AddExpensesview.swift */,
+				306143B92CD25D2700095A88 /* AddIncomeview.swift */,
+				306143BA2CD25D2700095A88 /* BudgetView.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		306143BF2CD25D2700095A88 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				306143BC2CD25D2700095A88 /* AddEventView.swift */,
+				306143BD2CD25D2700095A88 /* EventsView.swift */,
+				306143BE2CD25D2700095A88 /* EventView.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		306143C12CD25D2700095A88 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				306143C02CD25D2700095A88 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		306143C32CD25D2700095A88 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				306143C22CD25D2700095A88 /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		306143C72CD25D2700095A88 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				306143C42CD25D2700095A88 /* IntroView.swift */,
+				306143C52CD25D2700095A88 /* PageIntroModel.swift */,
+				306143C62CD25D2700095A88 /* PageIntroView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		306143CB2CD25D2700095A88 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				306143C82CD25D2700095A88 /* AddPostView.swift */,
+				306143C92CD25D2700095A88 /* PostsView.swift */,
+				306143CA2CD25D2700095A88 /* PostView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		306143CD2CD25D2700095A88 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				306143CC2CD25D2700095A88 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		306143CE2CD25D2700095A88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				306143B72CD25D2700095A88 /* Articles */,
+				306143BB2CD25D2700095A88 /* Budget */,
+				306143BF2CD25D2700095A88 /* Events */,
+				306143C12CD25D2700095A88 /* Home */,
+				306143C32CD25D2700095A88 /* Loading */,
+				306143C72CD25D2700095A88 /* OnBoarding */,
+				306143CB2CD25D2700095A88 /* Post */,
+				306143CD2CD25D2700095A88 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		306143D12CD25D2700095A88 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				306143CF2CD25D2700095A88 /* webView.swift */,
+				306143D02CD25D2700095A88 /* WebViewPage.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		306143D42CD25D2700095A88 /* EventWriter_Press */ = {
+			isa = PBXGroup;
+			children = (
+				3061439E2CD25D2700095A88 /* Cells */,
+				306143A12CD25D2700095A88 /* CoreData */,
+				306143A42CD25D2700095A88 /* Enums */,
+				306143AB2CD25D2700095A88 /* Helpers */,
+				306143AD2CD25D2700095A88 /* Preview Content */,
+				306143B32CD25D2700095A88 /* ViewModels */,
+				306143CE2CD25D2700095A88 /* Views */,
+				306143D12CD25D2700095A88 /* WebView */,
+				306143D22CD25D2700095A88 /* Assets.xcassets */,
+				306143D32CD25D2700095A88 /* EventWriter_PressApp.swift */,
+			);
+			path = EventWriter_Press;
+			sourceTree = "<group>";
+		};
 		30E78AD92CC6DE3400FE93DB = {
 			isa = PBXGroup;
 			children = (
-				30E78AE42CC6DE3400FE93DB /* EventWriter_Press */,
+				306143D42CD25D2700095A88 /* EventWriter_Press */,
 				30E78AE32CC6DE3400FE93DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,9 +322,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				30E78AE42CC6DE3400FE93DB /* EventWriter_Press */,
-			);
 			name = EventWriter_Press;
 			packageProductDependencies = (
 			);
@@ -86,6 +345,7 @@
 				};
 			};
 			buildConfigurationList = 30E78ADD2CC6DE3400FE93DB /* Build configuration list for PBXProject "EventWriter_Press" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -93,8 +353,6 @@
 				Base,
 			);
 			mainGroup = 30E78AD92CC6DE3400FE93DB;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 30E78AE32CC6DE3400FE93DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,6 +367,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306143D62CD25D2700095A88 /* Preview Assets.xcassets in Resources */,
+				306143D72CD25D2700095A88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +379,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306143D82CD25D2700095A88 /* ArticleCellView.swift in Sources */,
+				306143D92CD25D2700095A88 /* EventCellView.swift in Sources */,
+				306143DA2CD25D2700095A88 /* ExpensesCellView.swift in Sources */,
+				306143DB2CD25D2700095A88 /* IncomeCellView.swift in Sources */,
+				306143DC2CD25D2700095A88 /* PostCellView.swift in Sources */,
+				306143DD2CD25D2700095A88 /* TabItemView.swift in Sources */,
+				306143DE2CD25D2700095A88 /* CoreDataManager.swift in Sources */,
+				306143DF2CD25D2700095A88 /* EventsWR.xcdatamodeld in Sources */,
+				306143E02CD25D2700095A88 /* GenreEnum.swift in Sources */,
+				306143E12CD25D2700095A88 /* StatusEnum.swift in Sources */,
+				306143E22CD25D2700095A88 /* CustomButtonView.swift in Sources */,
+				306143E32CD25D2700095A88 /* CustomProgressView.swift in Sources */,
+				306143E42CD25D2700095A88 /* MultiLineTF.swift in Sources */,
+				306143E52CD25D2700095A88 /* PickerStatusView.swift in Sources */,
+				306143E62CD25D2700095A88 /* ScoreView.swift in Sources */,
+				306143E72CD25D2700095A88 /* SettingButtonView.swift in Sources */,
+				306143E82CD25D2700095A88 /* ArticlesViewModel.swift in Sources */,
+				306143E92CD25D2700095A88 /* BudgetViewModel.swift in Sources */,
+				306143EA2CD25D2700095A88 /* EventsviewModel.swift in Sources */,
+				306143EB2CD25D2700095A88 /* LoadingViewModel.swift in Sources */,
+				306143EC2CD25D2700095A88 /* PostViewModel.swift in Sources */,
+				306143ED2CD25D2700095A88 /* AddArticleView.swift in Sources */,
+				306143EE2CD25D2700095A88 /* ArticlesView.swift in Sources */,
+				306143EF2CD25D2700095A88 /* ArticleView.swift in Sources */,
+				306143F02CD25D2700095A88 /* AddExpensesview.swift in Sources */,
+				306143F12CD25D2700095A88 /* AddIncomeview.swift in Sources */,
+				306143F22CD25D2700095A88 /* BudgetView.swift in Sources */,
+				306143F32CD25D2700095A88 /* AddEventView.swift in Sources */,
+				306143F42CD25D2700095A88 /* EventsView.swift in Sources */,
+				306143F52CD25D2700095A88 /* EventView.swift in Sources */,
+				306143F62CD25D2700095A88 /* HomeView.swift in Sources */,
+				306143F72CD25D2700095A88 /* LoadingView.swift in Sources */,
+				306143F82CD25D2700095A88 /* IntroView.swift in Sources */,
+				306143F92CD25D2700095A88 /* PageIntroModel.swift in Sources */,
+				306143FA2CD25D2700095A88 /* PageIntroView.swift in Sources */,
+				306143FB2CD25D2700095A88 /* AddPostView.swift in Sources */,
+				306143FC2CD25D2700095A88 /* PostsView.swift in Sources */,
+				306143FD2CD25D2700095A88 /* PostView.swift in Sources */,
+				306143FE2CD25D2700095A88 /* SettingsView.swift in Sources */,
+				306143FF2CD25D2700095A88 /* webView.swift in Sources */,
+				306144002CD25D2700095A88 /* WebViewPage.swift in Sources */,
+				306144012CD25D2700095A88 /* EventWriter_PressApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +556,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EventWriter_Press/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "EventWriter Press";
+				INFOPLIST_KEY_CFBundleDisplayName = "!Melbet-Event Writer Press";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -265,8 +567,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.EventWriter-Press";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tom.ev3ntwr1t3rpr3ss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -288,7 +590,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EventWriter_Press/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "EventWriter Press";
+				INFOPLIST_KEY_CFBundleDisplayName = "!Melbet-Event Writer Press";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,8 +601,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.EventWriter-Press";
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tom.ev3ntwr1t3rpr3ss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -334,6 +636,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		306143A02CD25D2700095A88 /* EventsWR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				306143D52CD25D2700095A88 /* EventsWR.xcdatamodel */,
+			);
+			currentVersion = 306143D52CD25D2700095A88 /* EventsWR.xcdatamodel */;
+			path = EventsWR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 30E78ADA2CC6DE3400FE93DB /* Project object */;
 }
